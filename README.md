@@ -58,16 +58,16 @@ The project also ships with an **MCP (Model Context Protocol) server**, making i
 ┌─────────────────────────────────────────────────────────┐
 │               Streamlit Frontend (app.py)               │
 │                                                         │
-│  ┌─────────────┐   ┌──────────────┐   ┌─────────────┐  │
+│  ┌─────────────┐   ┌──────────────┐    ┌─────────────┐  │
 │  │ PDF Extract │──▶│  GPT-4o API  │──▶│  Job Search │  │
-│  │ (PyMuPDF)  │   │ (Azure Inf.) │   │   Button    │  │
-│  └─────────────┘   └──────────────┘   └──────┬──────┘  │
-└──────────────────────────────────────────────┼─────────┘
-                                               │
-                                               ▼
+│  │ (PyMuPDF)   │   │ (Azure Inf.) │    │   Button    │  │
+│  └─────────────┘   └──────────────┘    └──────┬──────┘  │
+└───────────────────────────────────────────────┼─────────|
+                                                │
+                                                ▼
                                ┌───────────────────────────┐
-                               │    Apify Actor (Scraper)   │
-                               │  LinkedIn Jobs + Proxies   │
+                               │    Apify Actor (Scraper)  │
+                               │  LinkedIn Jobs + Proxies  │
                                └───────────────────────────┘
                                                │
                                     ┌──────────┴──────────┐
@@ -225,35 +225,6 @@ Add the following to your MCP client config:
 }
 ```
 
----
-
-## 📸 Screenshots
-
-> *Coming soon — run the app locally to see the full UI in action.*
-
----
-
-## 🔮 Future Improvements
-
-- [ ] 🌍 Multi-location and multi-country job search support
-- [ ] 📊 Skills match score between resume and each job listing
-- [ ] 📧 Email digest of top job recommendations
-- [ ] 🗂️ Resume version comparison
-- [ ] 🔒 User authentication and saved searches
-- [ ] 📱 Mobile-responsive UI enhancements
-- [ ] 🤖 Agentic job application assistant via the MCP server
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ---
 
@@ -267,8 +238,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 **Mahmoud El-Assy**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/YOUR_LINKEDIN)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github)](https://github.com/YOUR_USERNAME)
 
 ---
 
